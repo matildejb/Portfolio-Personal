@@ -1,9 +1,10 @@
 body {
-    font-family: 'Alkatra', cursive; 
+  font-family: 'Alkatra', cursive; 
   margin:0;
   padding: 0;
   }
-  
+
+  /*BARRA NAVEGACION*/
   #navbar {
       display: flex;
       justify-content: center;
@@ -22,17 +23,15 @@ body {
     justify-content: space-around;
     gap: 3rem;
     margin: auto 1rem;
-   padding: 0.6rem;
+   padding: 0.8rem;
    
   }
   
-  li {
-    padding: 0.2rem;
-  }
   li:hover {
     /*box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);*/
     transform: scale(1.1);
     border-radius: 50%;
+    font-weight: bolder;
    
   }
   
@@ -40,32 +39,11 @@ body {
 a {
        text-decoration:none;
        color: black;
+      
      }
   
-  .logo {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 60%;
-    gap: 2rem;
-    cursor: pointer;
-  
-  }
 
-  .linkedin {
-    font-size: 1.5rem;
-  }
-  .github {
-    font-size: 1.5rem;
-  }
-
-  .linkedin:hover {
-    transform: scale(1.1);
-  }
-  .github:hover {
-    transform: scale(1.1);
-  }
-
+     /*PAGINA DE INICIO*/
   
   #welcome-section {
       display: flex;
@@ -75,21 +53,26 @@ a {
       padding-top: 100px;
       width: 100%;
       height: 100vh;
-      background: linear-gradient(35deg, #7E007D, #F3BAC1, #FDFDFD, #94615E, #181719);
-      background: linear-gradient(35deg, #006766, #9CBBBC, #FDF3B8, #6A6A6A, #B6B6B6);
-    
+     /* background: linear-gradient(35deg, #7E007D, #F3BAC1, #FDFDFD, #94615E, #181719);*/
+      background: linear-gradient(35deg, #006766, #9CBBBC, #FDF3B8, #6A6A6A, #B6B6B6);  
     
      
   }
   
+  .design {
+    width: 25rem;
+    position: absolute;
+    top:0;
+    left:0;
+  } 
+
   .name {
-    font-size: 50px;
+    font-size: 60px;
     font-family: "Lucida Handwriting",cursive;
     letter-spacing: 10px;
     padding-top: 100px;
   }
   
-
   
   span {
     font-weight: bolder;
@@ -100,29 +83,19 @@ a {
      background: -webkit-linear-gradient(40deg, #9E0DE2, #256C84,#122434, #172A45, #892F89, #431641, #073966);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bolder;
   
   }
   
-  img {
-    display: flex;
-    width: 25rem;
-    position: absolute;
-  
-  }
-  
-  .design {
-    top:0;
-    
-  }
+    /*SOBRE MI*/
 
-
-  #segunda {
+  #about {
    background: #FDF3B8;
     color: black;
-    padding: 6rem 15rem;
-    text-align: justify;
+    padding: 10rem 14rem;
+
+ 
   }
    
     .card {
@@ -133,15 +106,19 @@ a {
     padding: 30px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
+
+    .p-about {
+      text-align: justify;
+      line-height: 30px;
+    }
     
 
-  #tercera {
+  #projects {
     background: #FDF3B8;
     color: black;
     padding: 6rem 15rem;
     text-align: center;
     padding-bottom: 10px;
-   
     
 }
 
@@ -156,6 +133,7 @@ a {
   .title-project {
     text-align: center;
     padding-bottom: 3rem;
+  
     
   }
   #container-grid {
@@ -197,33 +175,52 @@ a {
   transform: scale(1.1);
 }
 
+
+.logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 60%;
+  gap: 2rem;
+  cursor: pointer;
+
+}
+
+.linkedin {
+  font-size: 1.5rem;
+}
+.github {
+  font-size: 1.5rem;
+}
+
+.linkedin:hover {
+  transform: scale(1.1);
+}
+.github:hover {
+  transform: scale(1.1);
+}
   
 /*PARA DISPOSITIVOS MOVILES*/
 
 
   @media (max-width: 800px){
-   
+   body {
+   font-size: 1.1rem;
+   }
+
     ul {
       margin: 0;
       gap:1;
       
-    }
-
-    li {
-      margin: 0;
-    }
-
-    #navbar {
-      padding: 0 0.6rem;
     }
   
    .logo {
     gap: 0.5rem;
    }
 
-    img {
+    .design {
      
-      width: 18rem;
+      width: 15rem;
       
     }
 
@@ -243,9 +240,10 @@ a {
  }
 
  
- #segunda {
+ #about {
    padding: 0.5rem;
- 
+   line-height: 15px;
+  
  }
   
    .card {
@@ -255,7 +253,7 @@ a {
    }
 
 
-   #tercera {
+   #projects {
     padding: 6rem 1rem;
   
     
@@ -267,6 +265,8 @@ a {
     padding-bottom: 1rem;
 
   }
-
+.title {
+  font-family: 'Ribeye Marrow', cursive;
+}
 
   }
