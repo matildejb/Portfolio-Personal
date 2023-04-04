@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Alkatra', cursive; 
+  font-family: 'PT Serif', serif; 
   margin:0;
   padding: 0;
   }
@@ -87,7 +87,7 @@ a {
      background: -webkit-linear-gradient(40deg, #9E0DE2, #256C84,#122434, #172A45, #892F89, #431641, #073966);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bolder;
   
   }
@@ -98,6 +98,7 @@ a {
    background-color: var(--main-bg-aliceblue);
     color: black;
     padding: 10rem 7rem;
+    font-size: 1.2rem;
 
  
   }
@@ -152,7 +153,7 @@ a {
   #projects {
     background-color: var(--main-bg-aliceblue);
     color: black;
-    padding: 6rem 15rem;
+    padding: 6rem 8rem;
     text-align: center;
     padding-bottom: 10px;
     
@@ -169,8 +170,8 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 4rem;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
     max-width: 1200px;
     padding-bottom: 10rem;
 
@@ -221,6 +222,7 @@ a {
   margin: 10px 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   line-height: 50px;
+  font-size: 1.4rem;
   
  
 }
@@ -244,16 +246,16 @@ a {
   display: flex;
   justify-content: end;
   align-items: end;
-  gap: 2rem;
+  gap: 2.2rem;
   cursor: pointer;
 
 }
 
 .linkedin {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .github {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .linkedin:hover {
@@ -269,6 +271,7 @@ a {
   align-items: end;
   color:#FDF3B8;
   font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 
@@ -340,19 +343,6 @@ a {
    
    }
 
-
-   #projects {
-    padding: 6rem 1rem;
-  
-    
-}
-
-
-  #container-grid {
-  
-    padding-bottom: 1rem;
-
-  }
 
 
 .datos {
