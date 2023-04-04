@@ -1,3 +1,7 @@
+:root{
+  --main-bg-color: aliceblue;
+}
+
 body {
   font-family: 'Alkatra', cursive; 
   margin:0;
@@ -91,9 +95,9 @@ a {
     /*SOBRE MI*/
 
   #about {
-   background: #FDF3B8;
+   background-color: var(--main-bg-aliceblue);
     color: black;
-    padding: 10rem 23rem;
+    padding: 10rem 15rem;
 
  
   }
@@ -116,10 +120,9 @@ a {
 
 .foto {
    width: 15rem;
-   height: auto;
    border-radius: 50%;
    position: absolute;
-   top:-20%;
+   top:-25%;
    left:80%;
    z-index: 2;
    animation-name: girar;
@@ -147,7 +150,7 @@ a {
 
     /* PROYECTOS*/
   #projects {
-    background: #FDF3B8;
+    background-color: var(--main-bg-aliceblue);
     color: black;
     padding: 6rem 15rem;
     text-align: center;
@@ -206,17 +209,27 @@ a {
 
 #footer {
   padding: 2rem 0;
-  background-color: #FDF3B8;
+  background-color: var(--main-bg-aliceblue);
+  background-color: #6A6A6A;
   display: flex;
   flex-direction: column;
-  text-align: center;
   width: 100%;
+  padding: 1.5rem;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  line-height: 50px;
   
  
 }
 
 .datos {
-  padding: 2rem ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem  0;
   background-color: #6A6A6A;
   color: white;
   border: 1px solid #ccc;
@@ -224,11 +237,12 @@ a {
   margin: 10px 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   line-height: 50px;
+  
 }
 
 .logo {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: end;
   gap: 2rem;
   cursor: pointer;
@@ -250,6 +264,9 @@ a {
 }
 
 .copy {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   color:#FDF3B8;
   font-weight: bolder;
 }
@@ -270,9 +287,6 @@ a {
       
     }
   
-   .logo {
-    gap: 0.5rem;
-   }
 
     .design {
      
@@ -285,13 +299,13 @@ a {
     padding: 2.5rem;
     padding-top: 10rem;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 3.5rem;
     
   }
 
   h1 {
    padding-bottom: 10px;
-   font-size: 1rem; 
+   font-size: 2rem; 
  
  }
 
@@ -313,16 +327,6 @@ a {
    
    }
 
-   .foto {
-    width: 13rem;
-    border-radius: 80%;
-    position: absolute;
-    top:-10%;
-    left:50%;
-    
-   
- }
-
 
    #projects {
     padding: 6rem 1rem;
@@ -338,4 +342,40 @@ a {
   }
 
 
+.datos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
   }
+
+
+
+  @media (max-width: 950px){
+  .foto {
+    width: 13rem;
+    border-radius: 80%;
+    position: absolute;
+    top:-15%;
+    left:50%;
+    
+  
+  }
+
+  #about {
+    padding: 0 5rem;
+    line-height: 15px;
+    padding-top: 10rem;
+   
+  }
+  
+  h2 {
+    font-weight: bolder;
+    text-align: left;
+    
+    } 
+}
+
+
