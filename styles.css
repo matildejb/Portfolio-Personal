@@ -343,12 +343,23 @@ a {
    
    }
 
+   #projects {
+    padding: 3rem 2.5rem;
+   
+    
+}
+
+   #footer {
+    padding: 1rem 1rem;
+   
+  }
 
 
 .datos {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 0.5rem;
   
 }
 
