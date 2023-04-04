@@ -26,8 +26,8 @@ body {
     list-style: none;
     justify-content: space-around;
     gap: 3rem;
-    margin: auto 1rem;
-   padding: 0.8rem;
+   
+    padding: 1rem;
    
   }
   
@@ -155,7 +155,7 @@ a {
     color: black;
     padding: 6rem 8rem;
     text-align: center;
-    padding-bottom: 10px;
+   
     
 }
 
@@ -210,20 +210,16 @@ a {
 
 #footer {
   padding: 2rem 0;
-  background-color: var(--main-bg-aliceblue);
   background-color: #6A6A6A;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.5rem;
   color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 10px 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   line-height: 50px;
   font-size: 1.4rem;
-  
  
 }
 
@@ -236,7 +232,7 @@ a {
   color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 10px 5px;
+  margin: 10px 65px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   line-height: 50px;
   
@@ -360,8 +356,10 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 0.5rem;
+  margin: 10px 0px;
   
 }
+
 
   }
 
