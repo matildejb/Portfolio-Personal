@@ -97,7 +97,7 @@ a {
   #about {
    background-color: var(--main-bg-aliceblue);
     color: black;
-    padding: 10rem 15rem;
+    padding: 10rem 7rem;
 
  
   }
@@ -122,8 +122,8 @@ a {
    width: 15rem;
    border-radius: 50%;
    position: absolute;
-   top:-25%;
-   left:80%;
+   top:-24%;
+   left:70%;
    z-index: 2;
    animation-name: girar;
    animation-duration: 1s;
@@ -275,7 +275,7 @@ a {
 /*PARA DISPOSITIVOS MOVILES*/
 
 
-  @media (max-width: 800px){
+  @media (max-width: 750px){
    body {
    font-size: 1.1rem;
    font-family: 'PT Serif', serif;
@@ -296,14 +296,17 @@ a {
 
   .name {
     
-    padding: 2.5rem;
+    padding: 3.5rem;
     padding-top: 10rem;
+  
     padding-bottom: 20px;
     font-size: 3.5rem;
     
   }
 
   h1 {
+    padding: 0 3rem;
+    text-align: center;
    padding-bottom: 10px;
    font-size: 2rem; 
  
@@ -317,8 +320,18 @@ a {
   
  }
  
+ .foto {
+  width: 13rem;
+  border-radius: 80%;
+  position: absolute;
+  top:-15%;
+  left:50%;
+  
+
+}
  h2 {
   text-align: left;
+  font-weight: bolder;
  }
   
    .card {
@@ -350,32 +363,5 @@ a {
 }
 
   }
-
-
-
-  @media (max-width: 950px){
-  .foto {
-    width: 13rem;
-    border-radius: 80%;
-    position: absolute;
-    top:-15%;
-    left:50%;
-    
-  
-  }
-
-  #about {
-    padding: 0 5rem;
-    line-height: 15px;
-    padding-top: 10rem;
-   
-  }
-  
-  h2 {
-    font-weight: bolder;
-    text-align: left;
-    
-    } 
-}
 
 
