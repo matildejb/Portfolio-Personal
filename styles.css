@@ -354,6 +354,7 @@ img {
    
    }
 
+
    #projects {
     padding: 6rem 2.5rem 0rem;
    
@@ -382,3 +383,9 @@ img {
   }
 
 
+  @media only screen and (min-width: 500px) and (max-width: 968px){ 
+  #container-grid {
+    
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
