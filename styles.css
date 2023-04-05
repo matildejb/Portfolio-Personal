@@ -30,7 +30,7 @@ body {
     list-style: none;
     padding: 0 0.8rem;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px;
    
   }
 
@@ -165,22 +165,21 @@ a {
   .title-p {
     text-align: center;
     padding-bottom: 3rem;
-   
-    
+    font-size: 2.5rem; 
   }
   #container-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     margin: auto;
     max-width: 1200px;
-    padding-bottom: 10rem;
+    padding-bottom: 6.5rem;
 
   }
 
   .project {
-    background: linear-gradient(90deg, #006766,/* #9CBBBC, #9CBBBC,*/ #006766);
+    background:rgba(2, 2, 4, 0.903); /*#006766;*/
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     border-bottom-left-radius: 10px;
@@ -189,23 +188,36 @@ a {
     
   }
 
+  .project:hover {
+    transform: scale(1.1);
+  }
+
   
   .project a {
     text-decoration: none;
     color:black;
     
 }
+.project-img {
+height: calc(80% - 6.8rem);
+width: 100%;
+height: auto;
+object-fit: cover;
+
+}
+
+img {
+  display: block;
+  padding: 10px;
+  border-radius: 5%
+
+}
 
 .title-projects {
   color: white;
   font-size: 1.1rem;
-  padding-top: 10px;
 }
 
-
-.title-projects:hover {
-  transform: scale(1.1);
-} 
 
 
 /*FOOTER*/
@@ -283,7 +295,7 @@ a {
    }
 
     ul {
-      margin: 0;
+
       gap:1;
       font-size: 18px;
       
@@ -346,6 +358,9 @@ a {
     padding: 6rem 2.5rem 0rem;
    
     
+}
+.title-p {
+  font-size: 1.8rem; 
 }
 
    #footer {
